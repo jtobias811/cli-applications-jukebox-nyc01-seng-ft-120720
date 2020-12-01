@@ -53,18 +53,4 @@ def run(songs)
   help
   puts "Please enter a command:"
   user_input = gets.strip
-
-  while (user_response != "exit")
-    user_response = gets.chomp
-    if (user_response == 'list')
-      list(songs)
-    end
-    if (user_response == "play")
-      play(songs)
-    end
-    if (user_response == "help")
-      help
-    end
-  end
-  exit_jukebox
 end
