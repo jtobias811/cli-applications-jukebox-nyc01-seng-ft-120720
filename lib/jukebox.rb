@@ -34,7 +34,7 @@ def play(songs)
 
   songs.each_with_index do |song_title, index|
     #binding.pry
-    if user_input == song_title || user_input == (index + 1).to_s
+    if user_input == song_title || user_input == (index + 1)
       song_title_found = true
       puts "Playing #{index + 1} #{song_title}"
     end
