@@ -36,7 +36,7 @@ def play(songs)
     #binding.pry
     if user_input == song_title || user_input == (index + 1).to_s
       song_title_found = true
-      puts "Playing #{index + 1} #{song_title}"
+      puts "Playing #{song_title}"
     end
   end
 
