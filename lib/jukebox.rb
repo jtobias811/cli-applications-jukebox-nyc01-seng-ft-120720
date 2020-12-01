@@ -55,18 +55,14 @@ def run(songs)
   user_input = gets.strip
 
   while user_input != "exit"
-    case user_input
-    when "exit"
-      exit_jukebox
-      break
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "help"
+    if user_input == "help"
       help
-    else
-      puts "Invalid command"
+    elsif user_input == "list"
+      list(songs)
+    else user_input == "play"
+      play(songs)
     end
+    break
   end
+  exit_jukebox
 end
