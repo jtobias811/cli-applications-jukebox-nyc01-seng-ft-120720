@@ -62,7 +62,8 @@ def run(songs)
     else user_input == "play"
       play(songs)
     end
-    break
+  if user_input == "exit"
+    exit_jukebox
   end
-  exit_jukebox
+  break
 end
