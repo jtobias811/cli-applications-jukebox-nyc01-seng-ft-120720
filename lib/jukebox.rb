@@ -54,7 +54,7 @@ def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
 
-  while user_input = gets.strip do 
+  while user_input = gets.strip do
     case user_input
     when "help"
       help
